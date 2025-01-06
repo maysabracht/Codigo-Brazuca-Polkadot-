@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Price Simulator - Polkadot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gas Price Simulator - Polkadot</h1>
+  
+  <!-- Transaction counter display -->
+  <p id="transaction-counter">Transações Simuladas: 0</p>
+  
+  <form id="gas-form">
+    <!-- Transaction Value -->
+    <label for="transaction-value">Transaction Value:</label>
+    <select id="currency-selector" required>
+        <option value="DOT">DOT</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="BRL">BRL</option>
+      </select>  
+    <input type="number" id="transaction-value" required>
+    
+    <!-- Complexity -->
+    <label for="complexity">Transaction Complexity:</label>
+    <select id="complexity" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    
+    
+    <!-- Calculate Button -->
+    <button type="button" id="calculate">Calculate Gas Price</button>
+  </form>
+  
+  <!-- Result Section -->
+  <div id="result"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
